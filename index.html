@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Europæiske vækstmarkeder | Norden Capital Group</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Breadcrumbs -->
+        <nav class="breadcrumb-nav">
+            <div class="breadcrumb active" data-section="0">
+                <span>Europæiske vækstmarkeder</span>
+            </div>
+            <div class="breadcrumb" data-section="1">
+                <span>Investeringscases</span>
+            </div>
+            <div class="breadcrumb" data-section="2">
+                <span>Prisvækst</span>
+            </div>
+            <div class="breadcrumb" data-section="3">
+                <span>EU-udvidelsen</span>
+            </div>
+            <div class="breadcrumb" data-section="4">
+                <span>EU sammenligning</span>
+            </div>
+            <div class="breadcrumb" data-section="5">
+                <span>Markedstiming</span>
+            </div>
+        </nav>
+
+        <!-- Section 1: Europæiske Vækstmarkeder -->
+        <section class="section active" id="section-0">
+            <div class="content-wrapper">
+                <h1>Europæiske vækstmarkeder</h1>
+
+                <div class="intro-text">
+                    <p>Da Kroatien blev medlem af EU i juli 2013, var ejendomspriserne i Dubrovnik blot €1,800 pr. m². I dag er de steget til over €5,200 pr. m² - en stigning på mere end 189%.</p>
+                    <p>Denne analyse identificerer hvor næste bølge af vækst kommer fra.</p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <div class="stat-number">€1.2B</div>
+                        <div class="stat-label">Årlig udenlandsk investering</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">25%</div>
+                        <div class="stat-label">Gennemsnitlig prisstigning 2023</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">2028</div>
+                        <div class="stat-label">Forventet EU-medlemskab</div>
+                    </div>
+                </div>
+
+                <div class="insight-box">
+                    <p>Vi ser at professionelle og institutionelle investorer positionerer sig strategisk i disse transformationsperioder for at være klar til at lukrere på markedets kommende opsving</p>
+                </div>
+
+                <button class="next-btn" id="next-btn-1">Næste</button>
+            </div>
+        </section>
+
+        <!-- Section 2: Investeringscases -->
+        <section class="section" id="section-1">
+            <div class="content-wrapper">
+                <h1>Investeringscases</h1>
+                <h2>Reelle eksempler på afkast siden 2013</h2>
+                
+                <div class="case-studies">
+                    <div class="case-card">
+                        <div class="case-header">
+                            <h3>Dubrovnik Pearl Resort</h3>
+                            <div class="case-type">Dubrovnik, Kroatien</div>
+                        </div>
+                        <div class="case-details">
+                            <div class="case-row">
+                                <span>Enheds pris 2013:</span>
+                                <span>€250,000</span>
+                            </div>
+                            <div class="case-row">
+                                <span>Enheds pris 2024:</span>
+                                <span>€680,000</span>
+                            </div>
+                            <div class="case-return">
+                                <span class="return-value" data-target="172">+0%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="case-card">
+                        <div class="case-header">
+                            <h3>Makarska Marina Village</h3>
+                            <div class="case-type">Makarska, Kroatien</div>
+                        </div>
+                        <div class="case-details">
+                            <div class="case-row">
+                                <span>Enheds pris 2015:</span>
+                                <span>€160,000</span>
+                            </div>
+                            <div class="case-row">
+                                <span>Enheds pris 2024:</span>
+                                <span>€380,000</span>
+                            </div>
+                            <div class="case-return">
+                                <span class="return-value" data-target="138">+0%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="case-card">
+                        <div class="case-header">
+                            <h3>Porto Montenegro Phase 2</h3>
+                            <div class="case-type">Budva, Montenegro</div>
+                        </div>
+                        <div class="case-details">
+                            <div class="case-row">
+                                <span>Enheds pris 2021:</span>
+                                <span>€180,000</span>
+                            </div>
+                            <div class="case-row">
+                                <span>Enheds pris 2024:</span>
+                                <span>€280,000</span>
+                            </div>
+                            <div class="case-return">
+                                <span class="return-value" data-target="56">+0%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="next-btn" id="next-btn-2">Næste</button>
+            </div>
+        </section>
+
+        <!-- Section 3: Dubrovnik Price Growth -->
+        <section class="section" id="section-2">
+            <div class="content-wrapper">
+                <h1>Prisvækst i Dubrovnik</h1>
+                <h2>Ejendomspriser i Kroatiens perle ved Adriaterhavet</h2>
+                
+                <div class="value-box-container">
+                    <div class="value professional neon-permanent">
+                        <span class="value-number" data-target="189">0</span>
+                        <span class="percentage">%</span>
+                        <div class="value-label">189% stigning siden 2013 - Fra €1,800 til €5,200 pr. m²</div>
+                    </div>
+                </div>
+
+                <div class="chart-container">
+                    <canvas id="dubrovnik-chart"></canvas>
+                </div>
+
+                <div class="insight-text">
+                    <p>Dubrovnik har oplevet en spektakulær vækst i ejendomspriserne siden EU-medlemskabet. Fra €1,800 pr. m² i 2013 til €5,200 pr. m² i 2024.</p>
+                    <p>De største stigninger kom efter 2017, hvor internationale investorer begyndte at opdage kystområdets unikke potentiale.</p>
+                </div>
+
+                <button class="next-btn" id="next-btn-3">Næste</button>
+            </div>
+        </section>
+
+        <!-- Section 4: EU-udvidelsen -->
+        <section class="section" id="section-3">
+            <div class="content-wrapper">
+                <h1>EU-udvidelse</h1>
+                <h2>Montenegro opfylder kritiske milepæle mod 2028</h2>
+                
+                <div class="milestones-grid">
+                    <div class="milestone-card completed" data-delay="0">
+                        <div class="milestone-icon">
+                            <div class="checkmark">✓</div>
+                        </div>
+                        <div class="milestone-content">
+                            <h3>EU-kommissionsformand bekræfter</h3>
+                            <div class="milestone-description">Ursula von der Leyen bekræfter 2028 som realistisk mål</div>
+                            <div class="milestone-date">Juni 2024</div>
+                            <div class="milestone-impact">Officiel EU-bekræftelse</div>
+                        </div>
+                        <div class="completion-badge">GENNEMFØRT</div>
+                    </div>
+
+                    <div class="milestone-card completed" data-delay="200">
+                        <div class="milestone-icon">
+                            <div class="checkmark">✓</div>
+                        </div>
+                        <div class="milestone-content">
+                            <h3>Kapitel 23 & 24 fremgang</h3>
+                            <div class="milestone-description">Betydelige fremskridt i retssystem og grundlæggende rettigheder</div>
+                            <div class="milestone-date">September 2024</div>
+                            <div class="milestone-impact">Kritisk for EU-tiltrædelse</div>
+                        </div>
+                        <div class="completion-badge">GENNEMFØRT</div>
+                    </div>
+
+                    <div class="milestone-card completed" data-delay="400">
+                        <div class="milestone-icon">
+                            <div class="checkmark">✓</div>
+                        </div>
+                        <div class="milestone-content">
+                            <h3>EU-parlamentsrapport</h3>
+                            <div class="milestone-description">Anbefaler accelereret medlemskabsproces for Montenegro</div>
+                            <div class="milestone-date">Oktober 2024</div>
+                            <div class="milestone-impact">Politisk momentum</div>
+                        </div>
+                        <div class="completion-badge">GENNEMFØRT</div>
+                    </div>
+
+                    <div class="milestone-card completed" data-delay="600">
+                        <div class="milestone-icon">
+                            <div class="checkmark">✓</div>
+                        </div>
+                        <div class="milestone-content">
+                            <h3>Økonomiske kriterier opfyldt</h3>
+                            <div class="milestone-description">Inflation under kontrol, BNP vækst 3.8% - opfylder EU-krav</div>
+                            <div class="milestone-date">August 2024</div>
+                            <div class="milestone-impact">Nøglekrav til medlemskab</div>
+                        </div>
+                        <div class="completion-badge">GENNEMFØRT</div>
+                    </div>
+
+                    <div class="milestone-card completed" data-delay="800">
+                        <div class="milestone-icon">
+                            <div class="checkmark">✓</div>
+                        </div>
+                        <div class="milestone-content">
+                            <h3>Bar-Beograd motorvej åbning</h3>
+                            <div class="milestone-description">Direkte forbindelse til EU-netværk færdiggjort</div>
+                            <div class="milestone-date">December 2024</div>
+                            <div class="milestone-impact">Øger attraktivitet markant</div>
+                        </div>
+                        <div class="completion-badge">GENNEMFØRT</div>
+                    </div>
+                </div>
+
+                <div class="expansion-countries">
+                    <div class="country-card">
+                        <div class="country-header">
+                            <h3>Montenegro</h3>
+                            <div class="readiness-score">85% klar</div>
+                        </div>
+                        <div class="country-details">
+                            <div class="membership-year">Forventet medlemskab: 2028</div>
+                            <div class="key-sectors">
+                                <strong>Nøglesektorer:</strong> Turisme, Infrastruktur, Energi
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="country-card">
+                        <div class="country-header">
+                            <h3>Nordmakedonien</h3>
+                            <div class="readiness-score">72% klar</div>
+                        </div>
+                        <div class="country-details">
+                            <div class="membership-year">Forventet medlemskab: 2030</div>
+                            <div class="key-sectors">
+                                <strong>Nøglesektorer:</strong> Landbrug, Teknologi, Infrastruktur
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="country-card">
+                        <div class="country-header">
+                            <h3>Serbien</h3>
+                            <div class="readiness-score">68% klar</div>
+                        </div>
+                        <div class="country-details">
+                            <div class="membership-year">Forventet medlemskab: 2032</div>
+                            <div class="key-sectors">
+                                <strong>Nøglesektorer:</strong> Produktion, IT, Infrastruktur
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="next-btn" id="next-btn-4">Næste</button>
+            </div>
+        </section>
+
+        <!-- Section 5: EU Sammenligning -->
+        <section class="section" id="section-4">
+            <div class="content-wrapper">
+                <h1>EU sammenligning</h1>
+                <h2>Ejendomsprisvækst 2023-2024 (%)</h2>
+                
+                <div class="chart-container">
+                    <canvas id="comparison-chart"></canvas>
+                </div>
+
+                <div class="comparison-insight">
+                    <p>Montenegro topper listen over prisvækst med <span class="highlight-number" data-target="18">0</span>% i 2023-2024, mens Kroatien har vist stabil vækst på <span class="highlight-number" data-target="12">0</span>% efter EU-medlemskabet.</p>
+                </div>
+
+                <button class="next-btn" id="next-btn-5">Næste</button>
+            </div>
+        </section>
+
+        <!-- Section 6: Markedstiming -->
+        <section class="section" id="section-5">
+            <div class="content-wrapper">
+                <h1>Markedstiming</h1>
+                <h2>Strategiske vinduer før fuld EU-integration</h2>
+                
+                <div class="timing-milestones">
+                    <div class="timing-card urgent">
+                        <div class="timing-header">
+                            <h3>EU-tiltrædelsesforhandlinger afslutning</h3>
+                            <div class="timing-date">Q2 2025</div>
+                        </div>
+                        <div class="price-impact">
+                            <span class="impact-percentage" data-target="20">0</span>% prisstigning forventet
+                        </div>
+                        <div class="urgency-indicator">Få måneder tilbage</div>
+                    </div>
+
+                    <div class="timing-card critical">
+                        <div class="timing-header">
+                            <h3>Referendum om EU-medlemskab</h3>
+                            <div class="timing-date">Q4 2025</div>
+                        </div>
+                        <div class="price-impact">
+                            <span class="impact-percentage" data-target="25">0</span>% stigning ved ja-resultat
+                        </div>
+                        <div class="urgency-indicator">Historisk vendepunkt</div>
+                    </div>
+
+                    <div class="timing-card final">
+                        <div class="timing-header">
+                            <h3>Fuld EU-integration</h3>
+                            <div class="timing-date">Januar 2028</div>
+                        </div>
+                        <div class="price-impact">
+                            <span class="impact-percentage" data-target="100">0</span>%+ stigning baseret på historiske data
+                        </div>
+                        <div class="urgency-indicator">Window lukkes</div>
+                    </div>
+                </div>
+
+                <div class="dual-chart-container">
+                    <div class="chart-half">
+                        <h3>FDI udvikling (€M)</h3>
+                        <canvas id="fdi-chart"></canvas>
+                    </div>
+                    <div class="chart-half">
+                        <h3>Infrastruktur projekter</h3>
+                        <div class="infrastructure-list">
+                            <div class="infra-item">
+                                <div class="infra-project">Havneudvidelse</div>
+                                <div class="infra-investment">€180M</div>
+                                <div class="infra-completion">2025</div>
+                                <div class="infra-impact">50% øget kapacitet</div>
+                            </div>
+                            <div class="infra-item">
+                                <div class="infra-project">Motorvej A1 forlængelse</div>
+                                <div class="infra-investment">€240M</div>
+                                <div class="infra-completion">2026</div>
+                                <div class="infra-impact">Direkte forbindelse til EU</div>
+                            </div>
+                            <div class="infra-item">
+                                <div class="infra-project">Jernbane modernisering</div>
+                                <div class="infra-investment">€85M</div>
+                                <div class="infra-completion">2024</div>
+                                <div class="infra-impact">Forbedret logistik</div>
+                            </div>
+                            <div class="infra-item">
+                                <div class="infra-project">EU tiltrædelsesmidler</div>
+                                <div class="infra-investment">€320M</div>
+                                <div class="infra-completion">2025-2028</div>
+                                <div class="infra-impact">Total transformation</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="analytical-insight">
+                    <p>Markedsanalyse viser tydelige mønstre hvor prisudvikling accelererer betydeligt i månederne op til EU-medlemskab. Professionelle investorer indtager typisk positioner 18-24 måneder før officiel integration.</p>
+                    <p><strong>Nuværende markedscyklus indikerer optimal positioneringsvindue lukker i løbet af 2025.</strong></p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
