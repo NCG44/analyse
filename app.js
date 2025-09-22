@@ -55,10 +55,10 @@ document.addEventListener('DOMContentLoaded', function() {
             "Serbien": 68
         },
         fdi_line_data: {
-            "2021": 85,
-            "2022": 120,
-            "2023": 165,
-            "2024": 210
+            "2021": 600,
+            "2022": 850,
+            "2023": 1050,
+            "2024": 1200
         },
         bar_infrastructure: [
             {"project": "Havneudvidelse", "investment": "€180M", "completion": "2025", "impact": "50% øget kapacitet"},
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function setupNavigation() {
         console.log('Setting up navigation...');
-        
+
         // Breadcrumb clicks
         const breadcrumbs = document.querySelectorAll('.breadcrumb');
         breadcrumbs.forEach((breadcrumb, index) => {
@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function showSection(index) {
         console.log(`Showing section ${index}`);
-        
+
         if (index < 0 || index >= totalSections) {
             console.log(`Invalid section index: ${index}`);
             return;
@@ -165,11 +165,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function initializeSection(index) {
         console.log(`Initializing section ${index}`);
-        
+
         // Reset all animated elements
         const animatedElements = document.querySelectorAll('.animated');
         animatedElements.forEach(el => el.classList.remove('animated'));
-        
+
         switch (index) {
             case 1: // Investment cases section
                 setTimeout(() => animateReturnValues(), 500);
@@ -205,11 +205,11 @@ document.addEventListener('DOMContentLoaded', function() {
     function animateNumber(element, target, duration = 2000, suffix = '', prefix = '') {
         if (!element || element.classList.contains('animated')) return;
         element.classList.add('animated');
-        
+
         let start = 0;
         const increment = target / (duration / 16);
         let current = start;
-        
+
         const timer = setInterval(() => {
             current += increment;
             if (current >= target) {
@@ -273,11 +273,11 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log(`Found ${milestoneCards.length} milestone cards`);
         milestoneCards.forEach((card, index) => {
             const delay = parseInt(card.getAttribute('data-delay')) || (index * 200);
-            
+
             // Reset animation
             card.style.opacity = '0';
             card.style.transform = 'perspective(1000px) rotateX(20deg) rotateY(20deg) translateY(50px)';
-            
+
             setTimeout(() => {
                 card.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
                 card.style.opacity = '1';
@@ -295,7 +295,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         console.log('Creating animated Dubrovnik chart');
-        
+
         // Clear any existing chart
         if (activeCharts.dubrovnik) {
             activeCharts.dubrovnik.destroy();
@@ -418,7 +418,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const countries = Object.keys(data.eu_comparison_updated);
         const prices = Object.values(data.eu_comparison_updated);
         const colors = ['#1FB8CD', '#FFC185', '#B4413C', '#ECEBD5', '#5D878F', '#DB4545'];
-        
+
         // Clear any existing chart
         if (activeCharts.comparison) {
             activeCharts.comparison.destroy();
